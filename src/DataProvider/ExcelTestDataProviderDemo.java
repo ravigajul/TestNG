@@ -19,10 +19,10 @@ public class ExcelTestDataProviderDemo {
 	XSSFSheet sh;
 
 	@Test(dataProvider ="testdataprovider")
-	public void printExcel(String fName, String lName)
+	public void printExcel(String fName, String lName, String Email)
 	{
 			
-		System.out.println(fName + " " +lName);
+		System.out.println(fName + " " +lName + " " + Email);
 		
 	}
 
@@ -30,9 +30,9 @@ public class ExcelTestDataProviderDemo {
 	@DataProvider(name="testdataprovider")
 	public String[][] getExcelData()
 	{
-		String fileName="C:\\Users\\rgajul\\Documents\\Me\\elearning\\Ex_Files_Selenium_EssT\\Ex_Files_Selenium_EssT\\TestData.xlsx";
+		String fileName=System.getProperty("user.dir")+"\\src\\TestData\\TestData.xlsx";
 		String sheetName="Sheet1";
-		String[][] arrayExcelData= new String[3][2];
+		String[][] arrayExcelData= new String[3][3];
 		try {
 			fs = new FileInputStream(fileName);
 			 wb= new XSSFWorkbook(fs);
@@ -49,14 +49,12 @@ public class ExcelTestDataProviderDemo {
 					
 					
 						 arrayExcelData[i][j]=cell.getStringCellValue();
-						 
+						 j++;
 					}
 					//System.out.println(cell.getStringCellValue());
 					
-					j++;
-				}
 				i++;
-			
+				}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

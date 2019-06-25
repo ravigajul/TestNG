@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG.TestNGDemo">
+      <class name="DataProvider.ExcelTestDataProviderDemo">
         <methods>
-          <include name="setup"/>
-          <include name="TestFormy"/>
-          <include name="tearDown"/>
+          <include name="teardown"/>
+          <include name="printExcel"/>
         </methods>
-      </class> <!-- TestNG.TestNGDemo -->
+      </class> <!-- DataProvider.ExcelTestDataProviderDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
