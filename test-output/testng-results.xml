@@ -2,33 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1481" started-at="2019-06-25T16:50:22Z" finished-at="2019-06-25T16:50:24Z">
+  <suite name="Default suite" duration-ms="16059" started-at="2019-06-25T18:19:46Z" finished-at="2019-06-25T18:20:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1481" started-at="2019-06-25T16:50:22Z" finished-at="2019-06-25T16:50:24Z">
-      <class name="DataProvider.ExcelTestDataProviderDemo">
-        <test-method status="PASS" signature="printExcel(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataProvider.ExcelTestDataProviderDemo@26be92ad]" name="printExcel" duration-ms="11" started-at="2019-06-25T16:50:24Z" data-provider="testdataprovider" finished-at="2019-06-25T16:50:24Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[UserName]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Password]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Email]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="16059" started-at="2019-06-25T18:19:46Z" finished-at="2019-06-25T18:20:02Z">
+      <class name="TestNG.TestNGDemo">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestNG.TestNGDemo@59f99ea]" name="setup" is-config="true" duration-ms="10000" started-at="2019-06-25T18:19:46Z" finished-at="2019-06-25T18:19:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printExcel -->
-        <test-method status="PASS" signature="printExcel(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataProvider.ExcelTestDataProviderDemo@26be92ad]" name="printExcel" duration-ms="1" started-at="2019-06-25T16:50:24Z" data-provider="testdataprovider" finished-at="2019-06-25T16:50:24Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TestFormy(java.lang.String, java.lang.String)[pri:0, instance:TestNG.TestNGDemo@59f99ea]" name="TestFormy" duration-ms="1788" started-at="2019-06-25T18:19:56Z" data-provider="DataProvider" finished-at="2019-06-25T18:19:57Z">
           <params>
             <param index="0">
               <value>
@@ -40,41 +23,47 @@
                 <![CDATA[Gajul]]>
               </value>
             </param>
-            <param index="2">
-              <value>
-                <![CDATA[ravi@yahoo.com]]>
-              </value>
-            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printExcel -->
-        <test-method status="PASS" signature="printExcel(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataProvider.ExcelTestDataProviderDemo@26be92ad]" name="printExcel" duration-ms="2" started-at="2019-06-25T16:50:24Z" data-provider="testdataprovider" finished-at="2019-06-25T16:50:24Z">
+        </test-method> <!-- TestFormy -->
+        <test-method status="PASS" signature="TestFormy(java.lang.String, java.lang.String)[pri:0, instance:TestNG.TestNGDemo@59f99ea]" name="TestFormy" duration-ms="1658" started-at="2019-06-25T18:19:57Z" data-provider="DataProvider" finished-at="2019-06-25T18:19:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Shirish]]>
+                <![CDATA[Krishna]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Kumar]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[shirish@yahoo.com]]>
+                <![CDATA[Chaitanya]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printExcel -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:DataProvider.ExcelTestDataProviderDemo@26be92ad]" name="teardown" is-config="true" duration-ms="1" started-at="2019-06-25T16:50:24Z" finished-at="2019-06-25T16:50:24Z">
+        </test-method> <!-- TestFormy -->
+        <test-method status="PASS" signature="TestFormy(java.lang.String, java.lang.String)[pri:0, instance:TestNG.TestNGDemo@59f99ea]" name="TestFormy" duration-ms="1228" started-at="2019-06-25T18:19:59Z" data-provider="DataProvider" finished-at="2019-06-25T18:20:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rajesh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- DataProvider.ExcelTestDataProviderDemo -->
+        </test-method> <!-- TestFormy -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestNG.TestNGDemo@59f99ea]" name="tearDown" is-config="true" duration-ms="1335" started-at="2019-06-25T18:20:00Z" finished-at="2019-06-25T18:20:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestNG.TestNGDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

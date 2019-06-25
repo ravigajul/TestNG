@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="15404" started-at="2019-06-25T18:20:19Z" finished-at="2019-06-25T18:20:35Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="15404" started-at="2019-06-25T18:20:19Z" finished-at="2019-06-25T18:20:35Z">
+      <class name="TestNG.TestNGDemo">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestNG.TestNGDemo@21bcffb5]" name="setup" is-config="true" duration-ms="7897" started-at="2019-06-25T23:50:19Z" finished-at="2019-06-25T23:50:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TestFormy(java.lang.String, java.lang.String)[pri:0, instance:TestNG.TestNGDemo@21bcffb5]" name="TestFormy" duration-ms="1612" started-at="2019-06-25T23:50:29Z" data-provider="DataProvider" finished-at="2019-06-25T23:50:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ravi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Gajul]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestFormy -->
+        <test-method status="PASS" signature="TestFormy(java.lang.String, java.lang.String)[pri:0, instance:TestNG.TestNGDemo@21bcffb5]" name="TestFormy" duration-ms="1406" started-at="2019-06-25T23:50:30Z" data-provider="DataProvider" finished-at="2019-06-25T23:50:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Krishna]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chaitanya]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestFormy -->
+        <test-method status="PASS" signature="TestFormy(java.lang.String, java.lang.String)[pri:0, instance:TestNG.TestNGDemo@21bcffb5]" name="TestFormy" duration-ms="1388" started-at="2019-06-25T23:50:32Z" data-provider="DataProvider" finished-at="2019-06-25T23:50:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rajesh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestFormy -->
+      </class> <!-- TestNG.TestNGDemo -->
+      <class name="DataProvider.ExcelTestDataProviderDemo">
+        <test-method status="PASS" signature="printExcel(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataProvider.ExcelTestDataProviderDemo@380fb434]" name="printExcel" duration-ms="1" started-at="2019-06-25T23:50:29Z" data-provider="testdataprovider" finished-at="2019-06-25T23:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UserName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Email]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printExcel -->
+        <test-method status="PASS" signature="printExcel(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataProvider.ExcelTestDataProviderDemo@380fb434]" name="printExcel" duration-ms="1" started-at="2019-06-25T23:50:29Z" data-provider="testdataprovider" finished-at="2019-06-25T23:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ravi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Gajul]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ravi@yahoo.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printExcel -->
+        <test-method status="PASS" signature="printExcel(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataProvider.ExcelTestDataProviderDemo@380fb434]" name="printExcel" duration-ms="0" started-at="2019-06-25T23:50:29Z" data-provider="testdataprovider" finished-at="2019-06-25T23:50:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shirish]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kumar]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[shirish@yahoo.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printExcel -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:DataProvider.ExcelTestDataProviderDemo@380fb434]" name="teardown" is-config="true" duration-ms="1" started-at="2019-06-25T23:50:33Z" finished-at="2019-06-25T23:50:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestNG.TestNGDemo@21bcffb5]" name="tearDown" is-config="true" duration-ms="1578" started-at="2019-06-25T23:50:33Z" finished-at="2019-06-25T23:50:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DataProvider.ExcelTestDataProviderDemo -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
