@@ -21,7 +21,7 @@ public class ExcelTestDataProviderDemo {
 	FileInputStream fs;
 	XSSFWorkbook wb;
 	XSSFSheet sh;
-
+//@Test(dataProvider = "testdataprovider", dataProviderClass = DataReader.class)
 	@Test(dataProvider = "testdataprovider")
 	public void testmethod(Hashtable<String, String> ht) {
 
@@ -40,37 +40,40 @@ public class ExcelTestDataProviderDemo {
 			sh = wb.getSheet(sheetName);
 			int columncount = sh.getRow(0).getLastCellNum();
 			int rowcount = sh.getPhysicalNumberOfRows();
-			obj1 = new Object[rowcount][1];
+			obj1 = new Object[rowcount-1][1];
 			int i = 0;
 			Iterator<Row> rowiterator = sh.iterator();
+
 			while (rowiterator.hasNext()) {
 				Row row = rowiterator.next();
-				Iterator<Cell> cellIterator = row.cellIterator();
-				int j = 0;
-				Hashtable<String, String> hashtable = new Hashtable<String, String>();
-				while (cellIterator.hasNext()) {
-					Cell cell = cellIterator.next();
-					if (i < rowcount-1) {
+				if (i != 0) {
+					System.out.println(row.getRowNum());
+					Iterator<Cell> cellIterator = row.cellIterator();
+					int j = 0;
+					Hashtable<String, String> hashtable = new Hashtable<String, String>();
+
+					while (cellIterator.hasNext()) {
+						Cell cell = cellIterator.next();
 						if (cell.getCellType() == CellType.STRING) {
 							hashtable.put(sh.getRow(0).getCell(j).getStringCellValue(),
-									sh.getRow(i+1).getCell(j).getStringCellValue());
+									sh.getRow(i).getCell(j).getStringCellValue());
 							System.out.println(
-									cell.getCellType() + "--->" + sh.getRow(i+1).getCell(j).getStringCellValue());
+									cell.getCellType() + "--->" + sh.getRow(i).getCell(j).getStringCellValue());
 						} else if (cell.getCellType() == CellType.NUMERIC) {
 							hashtable.put(sh.getRow(0).getCell(j).getStringCellValue(),
-									sh.getRow(i+1).getCell(j).getStringCellValue());
+									sh.getRow(i).getCell(j).getStringCellValue());
 							System.out.println(
-									cell.getCellType() + "--->" + sh.getRow(i+1).getCell(j).getStringCellValue());
+									cell.getCellType() + "--->" + sh.getRow(i).getCell(j).getStringCellValue());
 						}
 						j++;
 					}
+					obj1[i-1][0] = hashtable;
 
 				}
-				obj1[i][0] = hashtable;
-				// System.out.println(cell.getStringCellValue());
-
 				i++;
 			}
+			// System.out.println(cell.getStringCellValue());
+
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -80,7 +83,6 @@ public class ExcelTestDataProviderDemo {
 		return obj1;
 
 	}
-
 	}
 @AfterTest
 public void teardown() throws Exception
